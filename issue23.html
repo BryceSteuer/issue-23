@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <meta charset="utf-8">
+        <title>Programming Times Iss. 24</title>
+        <link href='https://fonts.googleapis.com/css?family=Product+Sans:300|Google+Sans+Display:500,400' rel='stylesheet'>
+        
+        <style>
+            
+            body {
+                margin: 0;
+                padding: 0;
+                height: 100%;
+            }
+            
+            #banner {
+                margin: 0;
+                background-color: rgb(88, 158, 8);
+                color: white;
+                padding: 20px 0;
+            }
+            #navbar {
+                margin: 0;
+                padding: 0;
+              background-color: rgb(121, 181, 53);
+                color: white;
+            }
+            #main {
+                margin: 0;
+                background-color: white;
+                color: rgb(0, 0, 0);
+            }
+            #footer {
+                margin: 0;
+                padding: 20px;
+                
+                background-color: rgb(88, 158, 8);
+                color: rgb(255, 255, 255);
+            }
+            
+            #footer p {
+                margin: 0;
+            }
+            
+            #home {
+                padding: 20px;
+            }
+            #news {
+                background-color: rgb(245, 245, 245);
+                padding: 20px;
+            }
+            #projects {
+                padding: 20px;
+            }
+            #apply {
+                background-color: rgb(245, 245, 245);
+                padding: 20px;
+            }
+            
+            h1 {
+                margin: 0;
+                font-family: "Product Sans", sans-serif;
+                font-size: 24px;
+                text-align: center;
+                font-weight: 300;
+                margin-bottom: -1px;
+            }
+            h2 {
+                margin: 0;
+                font-family: "Product Sans", sans-serif;
+                font-weight: 300;
+            }
+            h3 {
+                margin: 0;
+                margin-top: 10px;
+                font-family: "Google Sans Display", sans-serif;
+                font-weight: normal;
+            }
+            
+            p {
+                font-family: "Google Sans Display", sans-serif;
+                font-size: 15px;
+                font-weight: 400;
+                line-height: 24px;
+            }
+            
+            strong {
+                font-weight: 500;
+                border-bottom: 2px solid rgb(88, 158, 8);
+                color: #212121;
+            }
+            
+            b {
+                font-weight: 500;
+            }
+            
+            ul {
+                margin: 0;
+            }
+            a {
+               font-family: "Google Sans Display", sans-serif; 
+            }
+            li {
+                font-family: "Google Sans Display", sans-serif;
+                font-size: 15px;
+                font-weight: 400;
+                line-height: 25px;
+            }
+            #navbar a {
+                display: inline-block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                border: 0;
+                font-family: "Google Sans Display", sans-serif;
+                font-size: 15px;
+                font-weight: 400;
+                font-weight: 500;
+                transition: all 0.1s;
+            }
+            #navbar a:hover {
+                background-color: rgba(255, 255, 255, 0.1);
+            }
+            
+            a {
+                color: rgb(88, 158, 8);
+                font-weight: 500;
+                text-decoration: none;
+                border-bottom: 1px solid;
+            }
+            
+            a:hover {
+                color: rgb(88, 158, 8);
+            }
+            
+            #search {
+                float: right;
+                margin: 9px;
+                padding: 6px 12px;
+                font-size: 13px;
+                font-family: "Google Sans Display", sans-serif;
+                font-weight: 500;
+                border-radius: 2px;
+                border: 0;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                background-color: rgba(255, 255, 255, 0.9);
+                transition: all 0.3s;
+                outline: none;
+                width: 200px;
+            }
+            
+            #search:focus {
+                width: 250px;
+                background-color: rgba(255, 255, 255, 1);
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            }
+            
+            mark {
+                background-color: #FFEE58;
+                border-bottom: 2px solid #FDD835;
+            }
+            
+            .sticky {
+              position: fixed;
+              top: 0;
+              width: 100%;
+              height: 46px;
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
+            
+            .sticky + #main {
+                margin-top: 46px;
+            }
+            #header-p {
+                font-size: 13px;
+            }
+            .main {
+                font-size: 35px;
+            }
+           
+            body {
+                text-align: center ;
+                font-family: "Google Sans Display", sans-serif;
+            }
+            h1 {
+                font-size : 21px;
+            }
+           h3 {
+                font-size : 24px;
+            }
+            p {
+                margin: 20px;
+            }
+            li {
+                text-align: left;
+                margin: 20px;
+            }
+          
+        </style>
+        
+    </head>
+    <body>
+        
+        <div id="banner">
+            
+            <h1 class="main">The Programming Times<p id="header-p">Issue 23   ● Good News, Good Programming, Good Times</h1>
+            
+        </div>
+        
+        <div id="navbar">
+                <a href="javascript:scrollToY(document.getElementById('home').offsetTop-44, 100, 'easeInOutQuint');">     News    </a>
+                <a href="javascript:scrollToY(document.getElementById('news').offsetTop-44, 100, 'easeInOutQuint');">  Reviews        </a>
+                <a href="javascript:scrollToY(document.getElementById('projects').offsetTop-56, 100, 'easeInOutQuint');"> About </a>
+                <input placeholder='Search' id='search'/>
+        </div>
+        
+        <div id="main">
+            
+            <div id="home">
+                <h1><b>Information is power. If you have news, <a href="https://www.khanacademy.org/computer-programming/the-programming-times-ideas-page/6224136785395712" target="_blank">share it.</a>  </b></h1>
+                <h3>News Articles - Nov. 28- Dec. 5, 2018</h3>
+                <h3><i>The Digital Herald</i> to return</h3>
+                <p id="article"><img src="https://www.khanacademy.org/computer-programming/the-digital-herald-issue-4-thanks-to-thelegitprogrammer/6476621244039168/5707702298738688.png"></p><p></p><a href="https://www.khanacademy.org/computer-programming/tdh-subscribe-page/5331752110817280" target="_blank">The Digital Herald</a>, edited and founded by <a href="https://www.khanacademy.org/profile/HarounKhan/discussion" target="_blank">HK Productions</a> in April 2018, has returned according to a subscription page post by HK. <p></p><i>Hey guys haven't been on KA in a while due to school but TDH might start again and it will be a monthly newspaper, first issue probably in December. We will also be in alliance with Eclipse newspaper so get ready! :D </i> <p></p>The alliance mentioned involves <a href="https://www.khanacademy.org/profile/eclipseos1/discussion" target="_blank">EclipseOS</a>: <P></p><I>There will be a News app, which will show assorted news from KA's largest newspapers.
+3 newspapers are currently affiliated with us:
+The Programming Times.
+The Reader.
+The Khan Academy Newspaper.
+
+We would love, however, for TDH to become a member of the Alliance as well, so your news could be displayed in our News app.
+
+Another idea - As part of the Eclipse News Alliance, we are interested in having our own, officially-branded "Eclipse Newspaper" that would be featured as part of the Alliance, and would be considered one of our assets.
+However, we don't want to start a whole new Newspaper from scratch, and totally manage it by ourselves. Instead, we would like to semi-lead the paper, and have someone else, like you for example, to monitor the News output and editorship.
+
+So, there you go, two ideas for you: To have the TDH be loosely affiliated with us as part of the Eclipse News Alliance, so your news would be featured in the News app for Eclipse OS, or, to bring your newspaper partly under our management, as an officially-branded Eclipse Newspaper.</I>
+
+                
+            </div>
+            
+            <div id="home">
+                
+                <h2>Evaluate programs and earn badges!</h2>
+                <img src="https://www.khanacademy.org/computer-programming/december-badge-backlog-buster/5827228820209664/5685265389584384.png"><p><a href="https://www.khanacademy.org/profile/pamela/" target="_blank">Pamela</a>, the creator of most of Khan Academy's programming courses, has <a href="https://www.khanacademy.org/computer-programming/december-badge-backlog-buster/5827228820209664" target="_blank">challenged</a> the programmers of KA to <a href="https://www.khanacademy.org/computing/computer-programming/projectfeedback/next-eval" target="_blank">evaluate</a> fifty programs by December 24. The reward? "A Backlog Buster badge". The badge "could be Hopper with a Hard Hat and a Pickaxe, or it could be a game of Atari Breakout. Suggestions welcome." Evaluations were delayed due to a bug in KA's system. A helpful resource for clean, acceptable evaluations can be found <a href="https://www.khanacademy.org/computer-programming/doing-great-cs-project-evaluations-intro-to-js/6643714399862784" target="_blank">here</a>.</p>
+            </div>
+            <div id="home">
+                
+                <h2>December contest: Be Creative!</h2>
+                <p><img id="123" src="https://www.khanacademy.org/computer-programming/contest-be-creative-processing-js/5118555340832768/latest.png"><br> <a href="https://www.khanacademy.org/computer-programming/kacp-challenge-council/5745407636209664?qa_expand_key=ag5zfmtoYW4tYWNhZGVteXJpCxIIVXNlckRhdGEiRnVzZXJfaWRfa2V5X2h0dHA6Ly9pZC5raGFuYWNhZGVteS5vcmcvM2E4YjRkY2Y1ODIxNGFiZWFkZmIzM2NhZjZmMGQ5OWQMCxIIRmVlZGJhY2sYgICA1PTFmwoM" target="_blank">The KACP Challenge Council</a> is at it again. The contest for this month is Be Creative. Whether you're good at webpages or PJS programs, you can enter! There is both an HTML contest and a processing.JS contest. You can even enter both!<br><i>"Let your ideas freely flow and help us break the stereotype that computer science is only for dull number crunching with this month's open theme: Creativity. Deadline is December 28th. We will judge in the week after that, and award based on creativity, complexity, and clean, commented code. Processing JS and webpage entries will be judged separately, and the top winners in each skill bracket will receive a Golden Winston."</i></p>
+            </div>
+            
+            <div id="news">
+                
+                <h2>Reviews this week</h2>
+                <h3>By Nicholas, staff reviewer</h3>
+                <p><img src="https://www.khanacademy.org/computer-programming/ancient-forest/5487605884551168/5733935958982656.png"><p></p> <a href="https://www.khanacademy.org/computer-programming/ancient-forest/5487605884551168" target="_blank">Ancient Forest</a><P><b> by TectonicHorizon :)</b><br> This complex graphic is not only realistic, but also has animated water and light, and more importantly, is not laggy. By slowly loading and rendering noise at the beginning of the program, it can easily be masked into other shapes with no lag. Light that moves, water that flows, scaringly real looking leaves and grass, this graphic has it all!<p>Conclusion:
+Complexity: 9/10<P>
+Realism: 9.5/10<P>
+Mechanics: 9.2/10<P>
+Final Rating: 9.1/10  <p></p>
+            </div>
+            
+            <div id="subscribe">
+                
+                <h2>Subscribe to <i>The Programming Times</i> !</h2>
+                <p>You can subscribe to <em>The Programming Times</em> by <a href='https://www.khanacademy.org/computer-programming/subscribe-to-the-programming-times/6209479898071040'>clicking here</a>.</p><p><b>By subscribing, you will receive:</b></p><ul><li>Notifications of new releases of issues</li><li>Updates about the newspaper</li></ul><p>Thank you!</p>
+                
+            </div>
+            <div id="projects">
+                <h2>About</h2>
+                <p>The <b>Programming Times</b> is a newspaper on KACP designed to inform you about programming, provide you with reviews of KA's hottest programs, and most importantly, our goal is to provide KAPC with unbiased, reliable news. It will update you on the featured news related to these subjects on KA.</p>
+            </div>
+            
+        </div>
+        
+        <footer id="footer">
+            
+            <p>Thanks to <strong>Kaden Campbell</strong> for this awesome layout and <strong>To13@epophoney13</strong> for the awesome updates added to this webpage. All other changes and content made by <strong>Bryce S.</strong></p>
+            
+        </footer>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/7.0.0/mark.min.js"></script>
+        
+        <script>
+
+            var initContext = document.getElementById('main').innerHTML;
+            var instance = new Mark(document.querySelector("body"));
+        
+            var lastOffsetTop = 0;
+            document.getElementById('search').onkeyup = function() {
+                var context = document.getElementById('main');
+                context.innerHTML = initContext;
+                var instance = new Mark(context);
+
+                instance.mark(this.value, {
+                    accuracy: {
+                      value: "exactly",
+                      limiters: [".", ",", "!"],
+                    },
+                    separateWordSearch: false,
+                });
+                
+                if ( document.getElementsByTagName('mark').length > 0 ) {
+                    scrollToY(document.getElementsByTagName('mark')[0].offsetTop-62, 100, 'easeInOutQuint');
+                    lastOffsetTop = document.getElementsByTagName('mark')[0].offsetTop-62;
+                } else {
+                    scrollToY(lastOffsetTop, 100, 'easeInOutQuint');
+                }
+            };
+            
+            document.onscroll = function() {myFunction()};
+            
+            var header = document.getElementById("navbar");
+            
+            var sticky = header.offsetTop;
+            
+            function myFunction() {
+                lastOffsetTop = document.documentElement.scrollTop;
+              if (document.documentElement.scrollTop > sticky) {
+                header.classList.add("sticky");
+              } else {
+                header.classList.remove("sticky");
+              }
+            }
+            myFunction();
+            
+            
+            
+            window.requestAnimFrame = (function(){
+              return  window.requestAnimationFrame       ||
+                      window.webkitRequestAnimationFrame ||
+                      window.mozRequestAnimationFrame    ||
+                      function( callback ){
+                        window.setTimeout(callback, 1000 / 60);
+                      };
+            })();
+            function scrollToY(scrollTargetY, speed, easing) {
+            
+                var scrollY = window.scrollY || document.documentElement.scrollTop,
+                    scrollTargetY = scrollTargetY || 0,
+                    speed = speed || 2000,
+                    easing = easing || 'easeOutSine',
+                    currentTime = 0;
+            
+                var time = Math.max(.1, Math.min(Math.abs(scrollY - scrollTargetY) / speed, .8));
+                var easingEquations = {
+                        easeOutSine: function (pos) {
+                            return Math.sin(pos * (Math.PI / 2));
+                        },
+                        easeInOutSine: function (pos) {
+                            return (-0.5 * (Math.cos(Math.PI * pos) - 1));
+                        },
+                        easeInOutQuint: function (pos) {
+                            if ((pos /= 0.5) < 1) {
+                                return 0.5 * Math.pow(pos, 5);
+                            }
+                            return 0.5 * (Math.pow((pos - 2), 5) + 2);
+                        }
+                    };
+            
+                function tick() {
+                    currentTime += 1 / 60;
+            
+                    var p = currentTime / time;
+                    var t = easingEquations[easing](p);
+            
+                    if (p < 1) {
+                        requestAnimFrame(tick);
+            
+                        window.scrollTo(0, scrollY + ((scrollTargetY - scrollY) * t));
+                    } else {
+                        console.log('scroll done');
+                        window.scrollTo(0, scrollTargetY);
+                    }
+                }
+            
+                tick();
+            }
+        </script>
+        
+    </body>
+</html>
